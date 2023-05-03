@@ -8,7 +8,9 @@
 
 
 ## 🚀 Tecnologias Utilizadas
-
+- Recoil
+- React
+- Jest
 
 ## ⏱️ Iniciar projeto
 
