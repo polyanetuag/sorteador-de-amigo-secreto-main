@@ -20,7 +20,7 @@ O foco deste projeto foi realizar os testes TDD antes da criação dos component
 
 ```bash
 # Clone o repositório:
-hhttps://github.com/polyanetuag/sorteador-de-amigo-secreto-main.git
+http://github.com/polyanetuag/sorteador-de-amigo-secreto-main.git
 
 # Instale as dependências
 $ yarn install
