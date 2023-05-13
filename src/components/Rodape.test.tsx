@@ -1,44 +1,55 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import React from "react";
 import { RecoilRoot } from "recoil";
-import Rodape from "./Rodape";
 import { useListaDeParticipantes } from "../state/hooks/useListaDeParticipantes";
+import Rodape from "./Rodape";
 
 jest.mock('../state/hooks/useListaDeParticipantes', () => {
-  return {
-      useListaDeParticipantes: jest.fn()
-  }
+    return {
+        useListaDeParticipantes: jest.fn()
+    }
 })
 
-describe("quando não existem participantes suficientes", () => {
-  beforeEach(() => {
-    (useListaDeParticipantes as jest.Mock).mockReturnValue([])
+const mockNavegacao = jest.fn()
+
+jest.mock('react-router-dom', () => {
+    return {
+        useNavigate: () => mockNavegacao
+    }
 })
-  test("a brincadeira não pode ser iniciada", () => {
-    render(
-      <RecoilRoot>
-        <Rodape />
-      </RecoilRoot>
-    );
-    const botao = screen.getByRole("button");
 
-    expect(botao).toBeDisabled();
-  });
-});
-
+describe('quando não existem participantes suficientes', () => {
+    beforeEach(() => {
+        (useListaDeParticipantes as jest.Mock).mockReturnValue([])
+    })
+    test('a brincadeira não pode ser iniciada', () => {
+        render(<RecoilRoot>
+            <Rodape />
+        </RecoilRoot>)
+        const botao = screen.getByRole('button')
+        expect(botao).toBeDisabled()
+    })
+})
 
 describe('quando existem participantes suficientes', () => {
-  beforeEach(() => {
-    (useListaDeParticipantes as jest.Mock).mockReturnValue(['Ana', 'Maria', 'Luiza'])
-})
-  test('a brincadeira pode ser iniciada', () => {
-    render(
-      <RecoilRoot>
-        <Rodape />
-      </RecoilRoot>
-    );
-    const botao = screen.getByRole('button');
-    expect(botao).toBeEnabled()
-  })
-  
+    beforeEach(() => {
+        (useListaDeParticipantes as jest.Mock).mockReturnValue(['Ana', 'Catarina', 'Josefina'])
+    })
+    test('a brincadeira pode ser iniciada', () => {
+        render(<RecoilRoot>
+            <Rodape />
+        </RecoilRoot>)
+        const botao = screen.getByRole('button')
+        expect(botao).not.toBeDisabled()
+    })
+    test('a brincadeira foi iniciada', () => {
+        render(<RecoilRoot>
+            <Rodape />
+        </RecoilRoot>)
+        const botao = screen.getByRole('button')
+        fireEvent.click(botao)
+
+        expect(mockNavegacao).toHaveBeenCalledTimes(1)
+        expect(mockNavegacao).toHaveBeenCalledWith('/sorteio')
+    })
 })
