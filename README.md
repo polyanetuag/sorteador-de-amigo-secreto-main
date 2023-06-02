@@ -14,6 +14,7 @@ O foco deste projeto foi realizar os testes TDD"s antes da criação dos compone
 ## 🚀 Tecnologias Utilizadas
 - Recoil
 - ReactJS
+- Typescript
 - Jest
 - CSS
 
