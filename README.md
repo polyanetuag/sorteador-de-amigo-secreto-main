@@ -1,7 +1,7 @@
 <h1 align="center">Sorteador de Amigo Secreto 🗓️</h1>
 
 <div align="center">
-    <img width='800' src="">
+    <img width='800' src="images/../public/images/demo.gif">
 </div>
 
 ## 📚 Sobre
