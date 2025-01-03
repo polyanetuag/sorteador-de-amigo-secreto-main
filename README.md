@@ -13,7 +13,7 @@ O foco deste projeto foi realizar os testes TDD's antes da criação de cada com
 
 ## 🚀 Tecnologias Utilizadas
 - [Recoil](https://recoiljs.org/)
-- ReactJS
+- [ReactJS](https://react.dev/)
 - Typescript
 - Jest
 - CSS
