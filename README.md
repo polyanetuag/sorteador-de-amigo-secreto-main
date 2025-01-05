@@ -6,7 +6,7 @@
 
 ## 📚 Sobre
 
-O **Sorteador de Amigo Secreto** é uma aplicação que permite que você brinque com seus amigos, criando uma lista e sorteando seu amigo secreto de forma aleatória.
+O **Sorteador de Amigo Secreto** é uma aplicação que permite que você crie uma lista para sortear seu amigo secreto de forma aleatória.
 
 O foco deste projeto foi realizar os testes TDD's antes da criação de cada componente.
 
