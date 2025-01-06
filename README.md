@@ -15,7 +15,7 @@ O foco deste projeto foi realizar os testes TDD's antes da criação de cada com
 - [Recoil](https://recoiljs.org/)
 - [ReactJS](https://react.dev/)
 - [Typescript](https://www.typescriptlang.org/)
-- Jest
+- [Jest](https://jestjs.io/docs/tutorial-react)
 - CSS
 
 ## ⏱️ Iniciar projeto
