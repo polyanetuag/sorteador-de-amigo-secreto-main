@@ -16,7 +16,7 @@ O foco deste projeto foi realizar os testes TDD's antes da criação de cada com
 - [ReactJS](https://react.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/docs/tutorial-react)
-- CSS
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ## ⏱️ Iniciar projeto
 
