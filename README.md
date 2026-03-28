@@ -24,7 +24,7 @@ O foco deste projeto foi criar os testes TDD's antes da criação de cada compon
 # Clone o repositório:
 http://github.com/polyanetuag/sorteador-de-amigo-secreto-main.git
 
-# Instale as dependências
+# Instale as dependências:
 $ yarn install
 
 # Execute o servidor de desenvolvimento:
