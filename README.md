@@ -8,7 +8,7 @@
 
 O **Sorteador de Amigo Secreto** é uma aplicação prática que permite criar listas de participantes e realizar o sorteio de forma automática e totalmente aleatória, facilitando a organização da brincadeira de amigo secreto com rapidez e segurança.
 
-O foco deste projeto foi criar os testes TDD(Test-Driven Development) antes da criação de cada componente.
+O foco deste projeto foi criar os testes TDD (Test-Driven Development) antes da criação de cada componente.
 
 
 ## 🚀 Tecnologias Utilizadas
