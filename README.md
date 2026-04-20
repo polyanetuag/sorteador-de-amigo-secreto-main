@@ -27,7 +27,7 @@ http://github.com/polyanetuag/sorteador-de-amigo-secreto-main.git
 # Instale as dependências:
 $ yarn install
 
-# Execute o servidor de desenvolvimento:
+# Execute o servidor:
 $ yarn start
 
 # Execute os testes:
